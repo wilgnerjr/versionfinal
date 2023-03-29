@@ -13,18 +13,35 @@
 
     <!-- ==========IMPORTS========== -->
     <link rel="shortcut icon" href="img/LogoVermelhinho.png" type="image/x-icon">
+    <!-- ==========ICONS========== -->
     <!-- ==========FONT========== -->
     <!-- ==========CSS========== -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- ==========JS========== -->
-    <script src="JS/script.js"></script>
+    <script defer src="JS/script.js"></script>
+
+
     <title>VERMELHINHO</title>
 </head>
-<body>
+<body id="body">
+    <div id="telaDeAbertura">
+        <img src="./images/logoBranca.png" alt="imagem" id="imagemDeAbertura">
+    </div>
     <header>
-        <nav>
-            
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="#inicioo" onclick="esconder()" id="inicio">Inicio</a></li>
+                <li><a href="#empresa" onclick="esconder()">Empresa</a></li>
+                <li><a href="#servicos" onclick="esconder()">Serviços</a></li>
+                <li><a href="#contato" onclick="esconder()">Contato</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
+	<!-- Aqui você adicionaria o resto do conteúdo do seu site -->
 </body>
 </html>

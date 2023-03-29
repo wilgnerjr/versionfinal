@@ -1,5 +1,71 @@
+// RESET DOS PADRÕES INICIAIS
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(229, 243, 255);
+}
+
+
+// ==========Tela De Abertura==========
+#telaDeAbertura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+    z-index: 9999;
+    img{
+        width: 30rem;
+        height: 30rem;
+        animation: aparicao 1s ease-out forwards;
+        transition: 1.5s;
+    }
+}
+
+//========== Header -- NAVIGATION ==========
+.navigation{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem $Branco;
+    width: 100%;
+    height: 130px;
+    background: #20ca2e;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 0px 10px $Preto;
+    opacity: 1;
+}
+
+
+// MEDIA QUERIES (ADAPTAÇÕES MOBILE)
+
+@media (max-width:885px) {
+    #telaDeAbertura{
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
 }
