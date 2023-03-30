@@ -44,6 +44,8 @@ body {
   height: 130px;
   background: #ffffff;
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   transition: 0.5s;
   border-bottom: 1px solid transparent;
