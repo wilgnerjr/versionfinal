@@ -40,18 +40,43 @@ header .navbar .nav-menu .hamburger {
   display: none;
   cursor: pointer;
 }
-header .navbar .nav-menu .hamburger #bar {
+header .navbar .nav-menu .hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: rgb(236, 203, 203);
+  background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
-  .hamburger {
+  header .navbar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #4d4d4d;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  header .navbar .nav-menu.active {
+    left: 0;
+  }
+  header .navbar .nav-menu .nav-item {
+    margin: 16px 0;
+  }
+  header .navbar .nav-menu .hamburger {
     display: block;
-    color: black;
+  }
+  header .navbar .nav-menu .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .navbar .nav-menu .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .navbar .nav-menu .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }/*# sourceMappingURL=style.css.map */
