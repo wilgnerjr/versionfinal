@@ -1,0 +1,72 @@
+// ==========Reset Padrão==========
+*{margin: 0;padding: 0;box-sizing: border-box; list-style: none;text-decoration: none;}
+a{
+    color: white;
+}
+
+// <!-- CABÇALHO DA PÁGINA -->
+header{
+    background-color: #d47676;
+
+    // <!-- ÁREA DE NAVEGAÇÂO DA PÁGINA -->
+    .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 24px;
+
+        // <!-- Logo -->
+        .nav-brading{
+            font-family: 'Changa One', cursive;
+            font-size: 2rem;
+        }
+
+        // <!-- Area dos links -->
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+
+            // <!-- Links das Seções -->
+            .nav-item{
+
+                .nav-link{
+                    transition: 0.7s ease;
+                    &:hover{
+                        color: dodgerblue;
+                    }
+                }
+            }
+
+            // <!-- Icone do Menu Hamburger -->
+            .hamburger{
+                display: none;
+                cursor: pointer;
+
+                #bar{
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    transition: all 0.3s ease-in-out;
+                    background-color: rgb(236, 203, 203);
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .hamburger{
+        display: block;
+        color: black;
+    }
+    
+
+
+
+}
